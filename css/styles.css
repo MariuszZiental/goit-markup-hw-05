@@ -144,6 +144,8 @@ h4 {
 
 .top-link {
   text-decoration: none;
+  transition-duration: 250ms;
+  
 }
 a.top-link:hover {
   color: var(--brand-color);
@@ -163,6 +165,7 @@ a.top-link:focus {
 a.bottom-link {
   color: var(--footer-contact-link-color);
   text-decoration: none;
+  transition-duration: 250ms;
 }
 a.bottom-link:hover {
   color: var(--brand-color);
@@ -440,7 +443,7 @@ a.bottom-link:focus {
   align-items: center;
   cursor: pointer;
   border-radius: 50%;
-  transition-duration: 0.3s;
+  transition-duration: 250ms;
 }
 .icon-social-media-crew:hover {
   background-color: var(--brand-color);
@@ -471,7 +474,7 @@ a.bottom-link:focus {
   border-radius: 4px;
   cursor: pointer;
   border-color: var(--icon-color);
-  transition-duration: 0.3s;
+  transition-duration: 250ms;
 
   fill: var(--icon-color);
 }
@@ -573,6 +576,7 @@ a.bottom-link:focus {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transform: translateY(0);
   background: rgba(33, 150, 243, 0.9);
+  transition-duration: 250ms;
 }
 
 .comment {
@@ -619,7 +623,7 @@ a.bottom-link:focus {
   border: none;
   text-decoration: none;
   color: var(--logo-white-font-color);
-  transition-duration: 0.3s;
+  transition-duration: 250ms;
 }
 .portfolio-page-buttons li :hover {
   background-color: var(--brand-color);
