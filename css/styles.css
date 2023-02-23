@@ -109,6 +109,19 @@ h4 {
   margin: 0;
   padding-left: 93px;
 }
+
+.nav-link-box > .active::after {
+  position: absolute;
+  content:"";
+  display: block;
+  width: 53px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--brand-color);
+  margin-top: 31px;
+  margin-bottom: 0;
+}
+
 .nav-link-box a {
   color: var(--main-font-color);
 }
