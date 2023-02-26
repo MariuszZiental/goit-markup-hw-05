@@ -145,7 +145,6 @@ h4 {
 .top-link {
   text-decoration: none;
   transition-duration: 250ms;
-  
 }
 a.top-link:hover {
   color: var(--brand-color);
@@ -567,16 +566,23 @@ a.bottom-link:focus {
   align-items: flex-start;
   margin-bottom: 50px;
   border: 1px solid #eeeeee;
-
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
-.project-block:hover .overlay  {
+.project-block:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-block:hover .overlay {
   transform: translateY(0);
   background: rgba(33, 150, 243, 0.9);
-  transition-duration: 250ms;
 }
 
 .comment {
@@ -594,11 +600,14 @@ a.bottom-link:focus {
   height: 100%;
   z-index: 1;
 
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+
   transform: translateY(100%);
-  transition: 250ms ease;
 }
 .overlay > p {
-  
   padding: 10px;
   font-size: 18px;
   color: var(--logo-white-font-color);
