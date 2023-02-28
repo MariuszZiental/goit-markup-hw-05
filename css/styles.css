@@ -450,7 +450,6 @@ a.bottom-link:focus {
   align-items: center;
   cursor: pointer;
   border-radius: 50%;
-  transition-duration: 250ms;
 
   transition-property: background-color, --color1, --color3;
   transition-duration: 250ms;
@@ -652,7 +651,11 @@ a.bottom-link:focus {
   border: none;
   text-decoration: none;
   color: var(--logo-white-font-color);
+
+  transition-property: background-color, color, border-color, box-shadow;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .portfolio-page-buttons li :hover {
   background-color: var(--brand-color);
